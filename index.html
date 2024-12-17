@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.svg">
+	<link rel="shortcut icon" type="image/icon" href="assets/images/logo/favicon.svg">
 	<title>Верный Путь</title>
 </head>
 
@@ -52,7 +52,7 @@
 					<p>
 						Надежные и современные автомобили для поездок любого типа. Оформление аренды всего за пару кликов!
 					</p>
-					<button class="welcome-btn" onclick="window.location.href='#'">арендовать сейчас</button>
+					<button class="welcome-btn" onclick="smoothScroll('#featured-cars')">арендовать сейчас</button>
 				</div>
 			</div>
 </section>
@@ -64,6 +64,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="single-service-item">
 						<div class="single-service-icon">
+							<img src="assets/images/icons/medal.svg" height="50" width="50">
 						</div>
 						<h2><a href="#">надежный сервис</a></h2>
 						<p>
@@ -74,6 +75,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="single-service-item">
 						<div class="single-service-icon">
+							<img src="assets/images/icons/shield.svg" height="50" width="50">
 						</div>
 						<h2><a href="#">безопасность машин</a></h2>
 						<p>
@@ -84,6 +86,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="single-service-item">
 						<div class="single-service-icon">
+							<img src="assets/images/icons/badge-dollar.svg" height="50" width="50">
 						</div>
 						<h2><a href="#">доступные цены</a></h2>
 						<p>
@@ -363,7 +366,7 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<p>
-						реализовал <a href="https://www.dudosa.dev/">dudosa</a>
+						создано <a href="https://www.dudosa.dev/">dudosa</a>
 					</p>
 				</div>
 			</div>
@@ -377,5 +380,12 @@
         <script src="assets/js/owl.carousel.min.js" async></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" async></script>
         <script src="assets/js/custom.js" async></script>
+		<script>
+			function smoothScroll(target) {
+				document.querySelector(target).scrollIntoView({
+					behavior: 'smooth'
+				});
+			}
+		</script>
     </body>
 </html>
